@@ -1,0 +1,29 @@
+{
+  "composant1": {
+    "title": "Great limited music",
+    "footer": "All rights reserved to Spotify, BandsInTown and Google"
+  },
+  "composant2": {
+    "addArtist": "Add an artist",
+    "search": "Research",
+    "yourArtist": "Your artists",
+    "albums": "Albums",
+    "concerts": "Concerts",
+    "favoris": "Clear favorites"
+  },
+  "composant3": {
+    "albums": "Albums of",
+    "songs": "Songs"
+  },
+  "composant4": {
+    "songs": "Songs from the album",
+    "playSong": "Play music!",
+    "play": "Play"
+  },
+  "composant5": {
+    "concerts": "Concerts by",
+    "country":"Country :",
+    "city": "City :",
+    "nothing":"has no concerts scheduled!"
+  }
+}

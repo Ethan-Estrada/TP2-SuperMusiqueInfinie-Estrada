@@ -1,0 +1,25 @@
+<main>
+  <div class="row">
+    <div class="search">
+      <h3 translate>composant2.addArtist</h3>
+      <form>
+        <input [(ngModel)]="artistName" type="text" name="artistName" placeholder="Nana Mouskouri">
+        <button (click)="getArtist()"><span translate>composant2.search</span></button>
+      </form>
+    </div>
+    <div class="display">
+      <h3 translate>composant2.yourArtist</h3>
+      <div class="row">
+        <!-- Liste d'artistes ajoutés aux favoris -->
+        <div *ngFor="let artiste of artistFavoris">
+          <h4>{{artiste.name}}</h4>
+          <img src="{{artiste.imageUrl}}" alt="Artiste 1">
+          <button [routerLink]="['/albums',artiste.id]"> <span translate>composant2.albums</span></button><button [routerLink]="['/shows',artiste.name]"><span translate>composant2.concerts</span></button>
+        </div>
+      </div>
+      <div class="text-center">
+        <button (click)="clearArtist()" type="submit" translate>composant2.favoris</button>
+      </div>
+    </div>
+  </div>
+</main>

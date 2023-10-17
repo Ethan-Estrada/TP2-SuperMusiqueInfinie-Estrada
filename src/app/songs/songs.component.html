@@ -1,0 +1,25 @@
+<main>
+  <h3><span translate>composant4.songs</span> {{albumName}}</h3>
+  <div class="row">
+    <div class="youtubePlayer">
+      <div *ngIf="!videoUrl">
+        <img src="\assets\images\yourubeplayer.png" alt="youtubeGenerique">
+        <h3 translate>composant4.playSong</h3>
+      </div>
+      <iframe *ngIf="videoUrl" width="750" height="450" [src]="videoUrl | youtube" title="YouTube video player"
+      frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;
+      web-share" allowfullscreen></iframe>
+    </div>
+    <div class="songs">
+      <div class="songList">
+
+        <!-- Liste de chansons d'un album choisi -->
+        <div *ngFor="let song of listsongs">
+          <p>{{song.name}}</p>
+          <br>
+          <button (click)="searchVideo(song.name)"><span translate>composant4.play</span></button>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>

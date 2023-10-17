@@ -1,0 +1,29 @@
+{
+  "composant1":{
+    "title":"Super musique limitée",
+    "footer":"Tous droits réservés à Spotify, BandsInTown et Google"
+  },
+  "composant2":{
+    "addArtist":"Ajouter un artiste",
+    "search":"Rechercher",
+    "yourArtist":"Vos artistes",
+    "albums":"Albums",
+    "concerts":"Concerts",
+    "favoris":"Vider les favoris"
+  },
+  "composant3":{
+    "albums":"Albums de",
+    "songs":"Chansons"
+  },
+  "composant4":{
+    "songs":"Chansons de l'album",
+    "playSong":"Jouer une musique!",
+    "play":"Jouer"
+  },
+  "composant5":{
+    "concerts":"Concerts de",
+    "country":"Pays :",
+    "city": "Ville :",
+    "nothing":"n'a pas de concerts prevus!"
+  }
+}

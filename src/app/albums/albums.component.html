@@ -1,0 +1,16 @@
+<main>
+  <div class="row">
+    <div class="albums">
+      <h3><span translate>composant3.albums</span> {{nomArtist}}</h3>
+      <div class="row">
+
+        <!-- Liste d'albums d'un artiste choisi -->
+        <div *ngFor="let album of listAlbums">
+          <h4>{{album.albumName}}</h4>
+          <img src="{{album.imageUrl}}" alt="{{album.albumName}}" >
+          <button [routerLink]="['/songs',album.albumId,album.artistName]"> <span translate>composant3.songs</span></button>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>

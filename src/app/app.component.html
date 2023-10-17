@@ -1,0 +1,20 @@
+<header>
+  <div class="row">
+      <div><a [routerLink]="['/artists']" translate>composant1.title</a></div>
+      <div class="spacer"></div>
+      <div>
+          <select name="language" id="language">
+              <option (click)="changeLanguage('fr')" value="fr-ca">Français</option>
+              <option (click)="changeLanguage('en')" value="en-us">English</option>
+          </select>
+      </div>
+  </div>
+</header>
+<main>
+  <router-outlet></router-outlet>
+</main>
+<footer>
+  <div >
+      &copy; <span translate>composant1.footer</span>
+  </div>
+</footer>
